@@ -1,0 +1,95 @@
+/* h1{
+   color: rgb(18, 18, 206);
+   background-color: aliceblue; 
+
+} */
+
+/* #box{
+    background-color:blue;
+    height: 500px;
+    width: 500px;
+}; */
+/* #btn{
+    background-color:yellow;
+    padding: 20px;
+    text-align: center;
+} */
+
+/*sidebar*/
+#sidebar{
+    width:200px;
+    padding:20px;
+    background:whitesmoke;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+ 
+#userList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+#userList li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/*Main content*/
+#main{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #444;
+    position: relative;
+    transition: transform 4s ease-out;
+} 
+
+    #wheel {
+      margin: 50px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 10px solid #444;
+      position: relative;
+      transition: transform 4s ease-out;
+    }
+
+    .segment {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 50%;
+      left: 50%;
+      transform-origin: 0% 0%;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #000;
+    }
+
+    #pointer {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 30px solid red;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+#winner{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
